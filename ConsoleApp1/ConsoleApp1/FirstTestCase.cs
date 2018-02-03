@@ -12,6 +12,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Choose the browser
+            IWebDriver driver = new FirefoxDriver();
+            //Navigate to
+            driver.Url = "https://www.facebook.com/";
             
         }
     }
