@@ -17,6 +17,15 @@ namespace ConsoleApp1
             //Navigate to
             driver.Url = "https://www.facebook.com/";
             
+            //Declaration of IWebElements to log in         
+            IWebElement usernameInput = driver.FindElement(By.Id("email"));
+            IWebElement passwordInput = driver.FindElement(By.Id("pass"));
+            IWebElement signIn = driver.FindElement(By.XPath("//input[@value='Log In']"));
+
+            //Send keys and click on log in button
+            usernameInput.SendKeys("TEST");
+            passwordInput.SendKeys("TEST");
+            signIn.Click();
         }
     }
 }
