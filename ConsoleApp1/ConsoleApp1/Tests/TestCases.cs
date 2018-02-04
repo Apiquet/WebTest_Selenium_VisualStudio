@@ -23,7 +23,7 @@ namespace WebTests
 
         public void GoToSecondSearchResult()
         {
-            //Navigate to``
+            //Navigate to
             Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
             //Log In User 1
             LogIn.LogInUser1(Driver);
@@ -35,14 +35,14 @@ namespace WebTests
 
         public void NavigateBetweenPlatforms()
         {
-            //Navigate to``
+            //Navigate to
             Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
             //Log In User 1
             LogIn.LogInUser1(Driver);
             //Send a research
-            Home.SearchText(Driver, "Test Research");
-            //Go to the second result
-            SearchResult.ClickSecondResult(Driver);
+            Home.ClickWindowsLink(Driver);
+            Home.ClickLinuxLink(Driver);
+            Home.ClickMacLink(Driver);
         }
 
         static void Main(string[] args)
