@@ -8,24 +8,25 @@ using OpenQA.Selenium.Firefox;
 
 namespace ConsoleApp1
 {
-    class FirstTestCase
+    public class FirstTestCase
     {
+
+        //Choose the browser
+        IWebDriver driver = new FirefoxDriver();
+        public IWebDriver Driver { get => driver; set => driver = value; }
+
+        public void Test()
+        {
+            LogInPage LogIn = new LogInPage();
+            //Navigate to
+            Driver.Url = "https://www.facebook.com/";
+            LogIn.LogInUser1(Driver);
+        }
+
         static void Main(string[] args)
         {
-            //Choose the browser
-            IWebDriver driver = new FirefoxDriver();
-            //Navigate to
-            driver.Url = "https://www.facebook.com/";
-            
-            //Declaration of IWebElements to log in         
-            IWebElement usernameInput = driver.FindElement(By.Id("email"));
-            IWebElement passwordInput = driver.FindElement(By.Id("pass"));
-            IWebElement signIn = driver.FindElement(By.XPath("//input[@value='Log In']"));
-
-            //Send keys and click on log in button
-            usernameInput.SendKeys("TEST");
-            passwordInput.SendKeys("TEST");
-            signIn.Click();
+            FirstTestCase MainLoop = new FirstTestCase();
+            MainLoop.Test();
         }
     }
 }
