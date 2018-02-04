@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
+using NUnit.Framework;
 
 namespace WebTests
 {
@@ -48,6 +49,8 @@ namespace WebTests
 
             //Navigate between platforms
             Home.ClickWindowsLink(Driver);
+            
+            Home.IsWindowsPlatformPage(Driver);
             Home.ClickLinuxLink(Driver);
             Home.ClickMacLink(Driver);
 
