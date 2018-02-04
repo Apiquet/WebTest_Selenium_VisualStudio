@@ -31,18 +31,26 @@ namespace WebTests
             Home.SearchText(Driver, "Test Research");
             //Go to the second result
             SearchResult.ClickSecondResult(Driver);
+
+            //Log out user
+            Home.LogOutUser(Driver);
         }
 
         public void NavigateBetweenPlatforms()
         {
             //Navigate to
             Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
+
             //Log In User 1
             LogIn.LogInUser1(Driver);
-            //Send a research
+
+            //Navigate between platforms
             Home.ClickWindowsLink(Driver);
             Home.ClickLinuxLink(Driver);
             Home.ClickMacLink(Driver);
+
+            //Log out user
+            Home.LogOutUser(Driver);
         }
 
         static void Main(string[] args)
@@ -50,7 +58,6 @@ namespace WebTests
             TestCases TestCase = new TestCases();
             TestCase.GoToSecondSearchResult();
             TestCase.NavigateBetweenPlatforms();
-
         }
     }
 }

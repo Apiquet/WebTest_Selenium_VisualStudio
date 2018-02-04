@@ -22,7 +22,19 @@ namespace WebTests
             searchButton.Click();
         }
 
-        public void ClickWindowsLink(IWebDriver driver) => ClickButton(driver, 2);
+        public void LogOutUser(IWebDriver driver)
+        {
+            //button to open dialog
+            IWebElement optionsButton = driver.FindElement(By.XPath("/html/body/nav/div[1]/div[2]/nav/ul/li[4]/button"));
+            //log out button
+            IWebElement logOutButton = driver.FindElement(By.XPath("/html/body/nav/div[1]/div[2]/nav/ul/li[4]/ul/li[1]/a"));
+
+            //Log out user
+            optionsButton.Click();
+            logOutButton.Click();
+        }
+
+    public void ClickWindowsLink(IWebDriver driver) => ClickButton(driver, 2);
         public void ClickMacLink(IWebDriver driver) => ClickButton(driver, 3);
         public void ClickLinuxLink(IWebDriver driver) => ClickButton(driver, 4);
         private void ClickButton(IWebDriver driver, int number)
