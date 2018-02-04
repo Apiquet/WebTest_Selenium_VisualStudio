@@ -19,8 +19,8 @@ namespace ConsoleApp1
 
         public void Test1()
         {
-            //Navigate to
-            Driver.Url = "https://www.facebook.com/";
+            //Navigate to``
+            Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
             //Log In User 1
             LogIn.LogInUser1(Driver);
         }
