@@ -33,7 +33,7 @@ namespace WebTests
             SearchResult.ClickSecondResult(Driver);
         }
 
-        public void Test2()
+        public void NavigateBetweenPlatforms()
         {
             //Navigate to``
             Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
@@ -49,7 +49,7 @@ namespace WebTests
         {
             TestCases TestCase = new TestCases();
             TestCase.GoToSecondSearchResult();
-            TestCase.Test2();
+            TestCase.NavigateBetweenPlatforms();
 
         }
     }
