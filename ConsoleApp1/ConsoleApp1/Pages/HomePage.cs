@@ -8,8 +8,7 @@ using OpenQA.Selenium;
 namespace WebTests
 {
     public class HomePage
-    {
-        
+    {        
         public void SearchText(IWebDriver driver, string text)
         {
             //find textbox 
