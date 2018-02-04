@@ -67,7 +67,7 @@ namespace WebTests
         static void Main(string[] args)
         {
             TestCases TestCase = new TestCases();
-            TestCase.GoToSecondSearchResult();
+            //TestCase.GoToSecondSearchResult();
             TestCase.NavigateBetweenPlatforms();
         }
     }
