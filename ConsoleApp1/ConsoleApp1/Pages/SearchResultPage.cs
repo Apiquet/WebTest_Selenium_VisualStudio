@@ -12,7 +12,7 @@ namespace WebTests
         public void ClickFirstResult(IWebDriver driver) => FindResult(driver, 1);
         public void ClickSecondResult(IWebDriver driver) => FindResult(driver, 2);
         public void ClickThirdResult(IWebDriver driver) => FindResult(driver, 3);
-        internal void FindResult(IWebDriver driver, int number)
+        private void FindResult(IWebDriver driver, int number)
         {
             //Link to the specified result
             IWebElement result = driver.FindElement(By.XPath("/html/body/main/div/div/div/ul/li["+number+"]/article/div[2]/h3/a"));

@@ -14,7 +14,7 @@ namespace WebTests
         public void LogInUser1(IWebDriver driver) => LogInUser(driver, "fakemail@gmail.com", "fakemail123");
         public void LogInUser2(IWebDriver driver) => LogInUser(driver, "UserName2", "PassWord");
         //generic log in function
-        internal void LogInUser(IWebDriver driver, string username, string password)
+        private void LogInUser(IWebDriver driver, string username, string password)
         {
             //Declaration of IWebElements to log in  
             IWebElement usernameInput = driver.FindElement(By.Id("EmailTextbox"));
