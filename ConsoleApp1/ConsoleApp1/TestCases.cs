@@ -8,25 +8,27 @@ using OpenQA.Selenium.Firefox;
 
 namespace ConsoleApp1
 {
-    public class FirstTestCase
+    public class TestCases
     {
-
         //Choose the browser
-        IWebDriver driver = new FirefoxDriver();
-        public IWebDriver Driver { get => driver; set => driver = value; }
+        IWebDriver firefoxdriver = new FirefoxDriver();
+        public IWebDriver Driver { get => firefoxdriver; set => firefoxdriver = value; }
 
-        public void Test()
+        //Use LogInPage class
+        LogInPage LogIn = new LogInPage();
+
+        public void Test1()
         {
-            LogInPage LogIn = new LogInPage();
             //Navigate to
             Driver.Url = "https://www.facebook.com/";
+            //Log In User 1
             LogIn.LogInUser1(Driver);
         }
-
+        
         static void Main(string[] args)
         {
-            FirstTestCase MainLoop = new FirstTestCase();
-            MainLoop.Test();
+            TestCases TestCase = new TestCases();
+            TestCase.Test1();
         }
     }
 }

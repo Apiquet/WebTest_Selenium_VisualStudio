@@ -10,7 +10,10 @@ namespace ConsoleApp1
 {
     public class LogInPage
     {
-        public void LogInUser1(IWebDriver driver) => LogInUser(driver, "UserNameTest", "PassWordTest");
+        //public functions to log in User 1 and 2
+        public void LogInUser1(IWebDriver driver) => LogInUser(driver, "UserName1", "PassWord");
+        public void LogInUser2(IWebDriver driver) => LogInUser(driver, "UserName2", "PassWord");
+        //generic log in function
         internal void LogInUser(IWebDriver driver, string username, string password)
         {
             //Declaration of IWebElements to log in  
@@ -19,10 +22,9 @@ namespace ConsoleApp1
             IWebElement signIn = driver.FindElement(By.XPath("//input[@value='Log In']"));
 
             //Send keys and click on log in button
-            usernameInput.SendKeys("TEST");
-            passwordInput.SendKeys("TEST");
+            usernameInput.SendKeys(username);
+            passwordInput.SendKeys(password);
             signIn.Click();
-        }
-        
+        }        
     }
 }

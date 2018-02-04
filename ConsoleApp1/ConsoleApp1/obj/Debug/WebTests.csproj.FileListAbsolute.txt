@@ -1,0 +1,8 @@
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\WebDriver.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\WebDriver.xml
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\WebTests.csproj.CoreCompileInputs.cache
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FirstTestCase.cs" />
+    <Compile Include="TestCases.cs" />
     <Compile Include="LogInPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
