@@ -54,12 +54,11 @@ namespace WebTests
 
             Home.ClickLinuxLink(Driver);
             //Verify we are on Linux platform
-            Assert.IsTrue(Home.IsWindowsPlatformPage(Driver));
+            Assert.IsTrue(Home.IsLinuxPlatformPage(Driver));
 
             Home.ClickMacLink(Driver);
             //Verify we are on Mac platform
-            Assert.IsTrue(Home.IsWindowsPlatformPage(Driver));
-
+            Assert.IsTrue(Home.IsMacPlatformPage(Driver));
 
             //Log out user
             Home.LogOutUser(Driver);
@@ -68,7 +67,7 @@ namespace WebTests
         static void Main(string[] args)
         {
             TestCases TestCase = new TestCases();
-            //TestCase.GoToSecondSearchResult();
+            TestCase.GoToSecondSearchResult();
             TestCase.NavigateBetweenPlatforms();
         }
     }

@@ -47,6 +47,8 @@ namespace WebTests
         }
 
         public bool IsWindowsPlatformPage(IWebDriver driver) => IsTextPresent(driver, "Windows Software");
+        public bool IsLinuxPlatformPage(IWebDriver driver) => IsTextPresent(driver, "Windows Software");
+        public bool IsMacPlatformPage(IWebDriver driver) => IsTextPresent(driver, "Windows Software");
         private bool IsTextPresent(IWebDriver driver, string text) => 
             driver.FindElement(By.XPath("/html/body/section[2]/div/div/div/h1")).Text == text;        
     }
