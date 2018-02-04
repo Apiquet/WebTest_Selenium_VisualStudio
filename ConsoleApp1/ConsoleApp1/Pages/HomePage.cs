@@ -34,7 +34,7 @@ namespace WebTests
             logOutButton.Click();
         }
 
-    public void ClickWindowsLink(IWebDriver driver) => ClickButton(driver, 2);
+        public void ClickWindowsLink(IWebDriver driver) => ClickButton(driver, 2);
         public void ClickMacLink(IWebDriver driver) => ClickButton(driver, 3);
         public void ClickLinuxLink(IWebDriver driver) => ClickButton(driver, 4);
         private void ClickButton(IWebDriver driver, int number)
@@ -45,5 +45,8 @@ namespace WebTests
             //click button
             linkButton.Click();
         }
+
+        private bool IsTextPresent(IWebDriver driver, string text) => 
+            driver.FindElement(By.XPath("/html/body/section[2]/div/div/div/h1")).Text == text;        
     }
 }
