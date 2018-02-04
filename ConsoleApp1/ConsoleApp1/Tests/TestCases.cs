@@ -18,6 +18,8 @@ namespace WebTests
         LogInPage LogIn = new LogInPage();
         //Use HomePage class
         HomePage Home = new HomePage();
+        //Use SearchResultPage class
+        SearchResultPage SearchResult = new SearchResultPage();
 
         public void Test1()
         {
@@ -27,6 +29,8 @@ namespace WebTests
             LogIn.LogInUser1(Driver);
             //Send a research
             Home.SearchText(Driver, "Test Research");
+            //Go to the second result
+            SearchResult.ClickSecondResult(Driver);
         }
         
         static void Main(string[] args)
