@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-namespace ConsoleApp1
+namespace WebTests
 {
     public class LogInPage
     {

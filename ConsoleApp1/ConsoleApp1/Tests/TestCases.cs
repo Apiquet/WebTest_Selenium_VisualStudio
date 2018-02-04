@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 
-namespace ConsoleApp1
+namespace WebTests
 {
     public class TestCases
     {
@@ -16,6 +16,8 @@ namespace ConsoleApp1
 
         //Use LogInPage class
         LogInPage LogIn = new LogInPage();
+        //Use HomePage class
+        HomePage Home = new HomePage();
 
         public void Test1()
         {
@@ -23,6 +25,8 @@ namespace ConsoleApp1
             Driver.Url = "https://alternativeto.net/?currentLoginView=1&redirectUrl=/";
             //Log In User 1
             LogIn.LogInUser1(Driver);
+            //Send a research
+            Home.SearchText(Driver, "Test Research");
         }
         
         static void Main(string[] args)
