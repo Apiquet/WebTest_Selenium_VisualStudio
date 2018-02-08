@@ -14,7 +14,7 @@ namespace WebTests
     {
         //Choose the browser
         RemoteWebDriver firefoxdriver = new FirefoxDriver();
-        public IWebDriver Driver { get => firefoxdriver; set => firefoxdriver = value; }
+        public RemoteWebDriver Driver { get => firefoxdriver; set => firefoxdriver = value; }
         string Screenshotpath = "C:/";
         //Use LogInPage class
         LogInPage LogIn = new LogInPage();
@@ -24,7 +24,9 @@ namespace WebTests
         SearchResultPage SearchResult = new SearchResultPage();
         //Use EmailManager class
         EmailManager EmailManager = new EmailManager();
-        
+        //Use TaskScheduler class
+        TaskScheduler TaskScheduler = new TaskScheduler();
+
 
         public void GoToSecondSearchResult()
         {

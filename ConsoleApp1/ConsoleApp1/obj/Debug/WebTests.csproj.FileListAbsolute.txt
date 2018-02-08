@@ -8,3 +8,10 @@ C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleAp
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\nunit.framework.dll
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\nunit.framework.xml
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\Microsoft.Win32.TaskScheduler.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\Microsoft.Win32.TaskScheduler.xml
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\de\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\es\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\fr\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\it\Microsoft.Win32.TaskScheduler.resources.dll
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\zh-CN\Microsoft.Win32.TaskScheduler.resources.dll
