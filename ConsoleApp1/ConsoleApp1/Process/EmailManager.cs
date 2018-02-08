@@ -9,13 +9,14 @@ namespace ConsoleApp1.Process
 {
     public class EmailManager
     {
-        public void SendEmail(string subject, string body)
+        public void SendEmail(string subject, string body, string Screenshotpath)
         {
             SmtpClient smtpServer = new SmtpClient("smtp.live.com");
             var mail = new MailMessage { From = new MailAddress("myEmailAdress@hotmail.com") };
             mail.To.Add("recipientEmail@gmail.com");
             mail.Subject = subject;
             mail.Body = body;
+            mail.Attachments.Add(new Attachment(Screenshotpath));
             smtpServer.Port = 587;
             smtpServer.UseDefaultCredentials = false;
             smtpServer.Credentials = new System.Net.NetworkCredential("myEmailAdress@hotmail.com", "MyPassword");
