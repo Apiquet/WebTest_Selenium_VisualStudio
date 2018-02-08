@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using NUnit.Framework;
+using OpenQA.Selenium.Remote;
 
 namespace WebTests
 {
     public class TestCases
     {
         //Choose the browser
-        IWebDriver firefoxdriver = new FirefoxDriver();
+        RemoteWebDriver firefoxdriver = new FirefoxDriver();
         public IWebDriver Driver { get => firefoxdriver; set => firefoxdriver = value; }
-
+        string Screenshotpath = "C:/";
         //Use LogInPage class
         LogInPage LogIn = new LogInPage();
         //Use HomePage class
@@ -39,7 +40,8 @@ namespace WebTests
             SearchResult.ClickSecondResult(Driver);
 
             //Send Email with a screen shot of the final result
-
+            firefoxdriver.GetScreenshot().SaveAsFile(Screenshotpath, ScreenshotImageFormat.Png);
+            EmailManager.SendEmail("Test Research: GoToSecondSearchResult", "", Screenshotpath);
 
             //Log out user
             Home.LogOutUser(Driver);
