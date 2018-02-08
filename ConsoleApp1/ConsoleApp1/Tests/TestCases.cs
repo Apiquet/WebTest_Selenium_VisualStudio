@@ -27,7 +27,6 @@ namespace WebTests
         //Use TaskScheduler class
         TaskScheduler TaskScheduler = new TaskScheduler();
 
-
         public void GoToSecondSearchResult()
         {
             //Navigate to
@@ -72,6 +71,11 @@ namespace WebTests
 
             //Log out user
             Home.LogOutUser(Driver);
+        }
+        public void CreateNewTaskOnTaskScheduler(string heure, string minute)
+        {
+            //Create the new task
+            TaskScheduler.ScheduleTask(heure, minute);
         }
 
         static void Main(string[] args)
