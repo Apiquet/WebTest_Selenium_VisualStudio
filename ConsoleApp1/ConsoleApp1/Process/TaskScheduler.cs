@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Process
 {
-    class TaskScheduler
+    public class TaskScheduler
     {
     }
 }
