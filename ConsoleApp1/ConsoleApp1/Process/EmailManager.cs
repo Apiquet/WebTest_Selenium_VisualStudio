@@ -5,7 +5,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1.Process
+namespace WebTests
 {
     public class EmailManager
     {

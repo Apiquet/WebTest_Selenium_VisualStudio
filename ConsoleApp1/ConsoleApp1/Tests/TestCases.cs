@@ -21,6 +21,9 @@ namespace WebTests
         HomePage Home = new HomePage();
         //Use SearchResultPage class
         SearchResultPage SearchResult = new SearchResultPage();
+        //Use EmailManager class
+        EmailManager EmailManager = new EmailManager();
+        
 
         public void GoToSecondSearchResult()
         {
@@ -34,6 +37,9 @@ namespace WebTests
             Home.SearchText(Driver, "Test Research");
             //Go to the second result
             SearchResult.ClickSecondResult(Driver);
+
+            //Send Email with a screen shot of the final result
+
 
             //Log out user
             Home.LogOutUser(Driver);
