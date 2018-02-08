@@ -72,18 +72,21 @@ namespace WebTests
             //Log out user
             Home.LogOutUser(Driver);
         }
-        public void CreateNewTaskOnTaskScheduler(string heure, string minute)
+        public void CreateNewTaskOnTaskScheduler(string hour, string minute)
         {
             //Create the new task
-            TaskScheduler.ScheduleTask(heure, minute);
+            TaskScheduler.ScheduleTask(hour, minute);
         }
 
         static void Main(string[] args)
         {
             TestCases TestCase = new TestCases();
+            //Navigate to a website, log in user, tape a research and go to the second result
+            //Send a mail with a screenshot of the final web page
             TestCase.GoToSecondSearchResult();
+            //Navigate between windows / linux / mac platforms
             TestCase.NavigateBetweenPlatforms();
-
+            //schedule a task on Windows TaskScheduler, first argument is hours, second minutes
             if (args.Length == 2) TestCase.CreateNewTaskOnTaskScheduler(args[0], args[1]);
         }
     }

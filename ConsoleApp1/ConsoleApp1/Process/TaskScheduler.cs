@@ -9,7 +9,7 @@ namespace WebTests
 {
     public class TaskScheduler
     {
-        public void ScheduleTask(string heure, string minute)
+        public void ScheduleTask(string hour, string minute)
         {
             using (TaskService RegisterTask = new TaskService())
             {
@@ -21,7 +21,7 @@ namespace WebTests
                 td.Triggers.Add(new TimeTrigger
                 {
                     StartBoundary =
-                        Convert.ToDateTime(DateTime.Today.Date.ToString("MM/dd/yyyy") + " " + heure + ":" + minute + ":00 AM")
+                        Convert.ToDateTime(DateTime.Today.Date.ToString("MM/dd/yyyy") + " " + hour + ":" + minute + ":00 AM")
                 });
 
                 // Create an action that will launch Fiddler in quiet mode
