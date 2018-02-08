@@ -83,6 +83,8 @@ namespace WebTests
             TestCases TestCase = new TestCases();
             TestCase.GoToSecondSearchResult();
             TestCase.NavigateBetweenPlatforms();
+
+            if (args.Length == 2) TestCase.CreateNewTaskOnTaskScheduler(args[0], args[1]);
         }
     }
 }
