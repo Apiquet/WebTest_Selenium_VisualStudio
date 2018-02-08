@@ -8,3 +8,4 @@ C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleAp
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\nunit.framework.dll
 C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\bin\Debug\nunit.framework.xml
+C:\Users\Anthony Piquet\Documents\GitHub\WebTest_Selenium_VisualStudio\ConsoleApp1\ConsoleApp1\obj\Debug\WebTests.csprojResolveAssemblyReference.cache
